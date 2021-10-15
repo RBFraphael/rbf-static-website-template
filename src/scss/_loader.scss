@@ -1,0 +1,43 @@
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #FFF;
+
+    #middle-screen{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+
+        #wrapper{
+            position: relative;
+            animation: 1s intro forwards;
+
+            img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -10%;
+                left: -10%;
+                width: 120%;
+                height: 120%;
+                border-radius: 50%;
+                border-left: solid 8px $red;
+                border-top: solid 8px $white;
+                border-right: solid 8px $white;
+                border-bottom: solid 8px $white;
+                animation: spin linear 2s infinite;
+            }
+        }
+    }
+}

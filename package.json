@@ -1,0 +1,50 @@
+{
+  "name": "rbf-static-website-template",
+  "version": "1.0.0",
+  "description": "Static website template with modern technologies.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "grunt dev",
+    "dist": "grunt dist",
+    "zip": "node build/release.js",
+    "build": "run-s dist zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbfraphael/rbf-static-website-template.git"
+  },
+  "author": "Raphael Fontao <raphael.fontao@tugare.com.br>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rbfraphael/rbf-static-website-template/issues"
+  },
+  "homepage": "https://github.com/rbfraphael/rbf-static-website-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "archiver": "^5.3.0",
+    "babel-loader": "^8.2.2",
+    "chalk": "^4.1.2",
+    "grunt": "^1.4.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-run": "^0.8.1",
+    "grunt-sass": "^3.1.0",
+    "grunt-webpack": "^4.0.3",
+    "html-minifier": "^4.0.0",
+    "jquery": "^3.6.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
+    "php2html": "^4.0.0",
+    "shelljs": "^0.8.4",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
